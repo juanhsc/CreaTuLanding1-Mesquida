@@ -1,6 +1,6 @@
 
 import './App.css'
-
+import ItemDetailContainer from './components/ItemDetailContainer';
 import React from 'react';
 import NavBar from './components/NavBar';
 import ItemListContainer from './components/ItemListContainer';
@@ -17,7 +17,7 @@ const App = () => {
       <NavBar />
     <Routes>
 <Route path='/' element= {<ItemListContainer greeting="¡Bienvenido a Mi Tienda Online!" />}> </Route>
-<Route path="/item" element={ItemDetailContainer/>}/>
+<Route path='/item' element={<ItemDetailContainer/>}/>
     </Routes>
       
     
