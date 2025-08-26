@@ -1,8 +1,13 @@
 import React from 'react';
+import {useEffect,useState} from 'react';
+import itemList from "./itemList"
+import {getProducts} from "../mock/AsyncMock"
+
+
 
 const ItemListContainer = ({ mensaje }) => {
- const{data, setdata}=userstate{[]}
-userEffect{()=>{
+ const{data, setData}=useState{[]}
+useEffect{()=>{
 getProducts()
 .them ((res)=>setData(res))
 .catch ((error)=>console.error(error))
