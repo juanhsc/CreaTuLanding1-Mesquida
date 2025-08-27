@@ -79,10 +79,9 @@ const ItemListContainer = ({ greeting }) => {
                 borderRadius: '4px',
                 cursor: 'pointer'
               }}
-              onClick={() => {
-                
-                alert(`Ver detalle de ${funko.name}`);
-              }}
+             onClick={() => {
+  window.location.href = `/item/${funko.id}`;
+}}
             >
               Ver Detalle
             </button>

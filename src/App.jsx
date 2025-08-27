@@ -1,5 +1,5 @@
 import './App.css'
-import ItemDetailContainer from './components/ItemDetailContainer';
+//import ItemDetailContainer from './components/ItemDetailContainer';
 import React from 'react';
 import NavBar from './components/NavBar';
 import ItemListContainer from './components/ItemListContainer';
