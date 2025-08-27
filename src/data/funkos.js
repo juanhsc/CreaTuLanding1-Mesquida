@@ -1,61 +1,61 @@
 export const funkos = [
   {
     id: 1,
-    name: "Funko Pop Batman",
+    name: "Funko Goku",
     price: 15.99,
-    category: "DC",
-    image: "https://via.placeholder.com/300x400/000000/FFFFFF?text=Batman+Funko",
-    description: "Funko Pop de Batman, figura coleccionable de vinilo.",
+    category: "Dragon ball",
+image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcJaXX0sol10BgSalHqIE_gm8cGlpnFSNTLw&s",
+    description: "Funko Pop goku, figura coleccionable de vinilo.",
     stock: 10
   },
   {
     id: 2,
-    name: "Funko Pop Spider-Man",
+    name: "Funko Vegeta",
     price: 16.99,
-    category: "Marvel",
-    image: "https://via.placeholder.com/300x400/FF0000/FFFFFF?text=Spider-Man+Funko",
-    description: "Funko Pop de Spider-Man, figura coleccionable de vinilo.",
+    category: "Dragon ball",
+    image: "https://http2.mlstatic.com/D_NQ_NP_992711-MLA43576274674_092020-O.webp",
+    description: "Funko Pop de Vegeta, figura coleccionable de vinilo.",
     stock: 8
   },
   {
     id: 3,
-    name: "Funko Pop Harry Potter",
+    name: "Funko Gohan",
     price: 14.99,
-    category: "Movies",
-    image: "https://via.placeholder.com/300x400/800080/FFFFFF?text=Harry+Potter+Funko",
-    description: "Funko Pop de Harry Potter, figura coleccionable de vinilo.",
+    category: "Dragon ball",
+    image: "https://http2.mlstatic.com/D_NQ_NP_655426-MLA43472371537_092020-O.webp",
+    description: "Funko Pop de Gohan, figura coleccionable de vinilo.",
     stock: 12
   },
   {
     id: 4,
-    name: "Funko Pop Pikachu",
+    name: "Funko Freezer",
     price: 17.99,
-    category: "Anime",
-    image: "https://via.placeholder.com/300x400/FFFF00/000000?text=Pikachu+Funko",
-    description: "Funko Pop de Pikachu, figura coleccionable de vinilo.",
+    category: "Dragon ball",
+    image: "https://http2.mlstatic.com/D_NQ_NP_813923-MLA40936057079_022020-O.webp",
+    description: "Funko Pop de freezer, figura coleccionable de vinilo.",
     stock: 15
   },
   {
     id: 5,
-    name: "Funko Pop Darth Vader",
+    name: "Funko Broly",
     price: 18.99,
-    category: "Star Wars",
-    image: "https://via.placeholder.com/300x400/000000/FFFFFF?text=Darth+Vader+Funko",
-    description: "Funko Pop de Darth Vader, figura coleccionable de vinilo.",
+    category: "Dragon ball",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS930n0txN72pNx3YMaS5o2-iMf1C04jVXvQA&s",
+    description: "Funko Pop de Broly, figura coleccionable de vinilo.",
     stock: 6
   }
 ];
 
-// Función que simula una llamada a API (como pide tu profesor)
+
 export const getFunkos = () => {
   return new Promise((resolve) => {
     setTimeout(() => {
       resolve(funkos);
-    }, 1000); // Simula 1 segundo de carga
+    }, 1000); 
   });
 };
 
-// Función para obtener un funko por ID
+
 export const getFunkoById = (id) => {
   return new Promise((resolve) => {
     setTimeout(() => {
@@ -65,7 +65,7 @@ export const getFunkoById = (id) => {
   });
 };
 
-// Función para obtener funkos por categoría
+
 export const getFunkosByCategory = (category) => {
   return new Promise((resolve) => {
     setTimeout(() => {
