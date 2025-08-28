@@ -23,48 +23,7 @@ const NavBar = () => {
         Funko Store
       </Link>
 
-      <div style={{ display: 'flex', gap: '25px' }}>
-        <Link to="/" style={{ 
-          textDecoration: 'none', 
-          color: '#ccc', 
-          fontSize: '16px', 
-          padding: '5px 0' 
-        }}>
-          Todos
-        </Link>
-        <Link to="/category/DC" style={{ 
-          textDecoration: 'none', 
-          color: '#ccc', 
-          fontSize: '16px', 
-          padding: '5px 0' 
-        }}>
-          DC Comics
-        </Link>
-        <Link to="/category/Marvel" style={{ 
-          textDecoration: 'none', 
-          color: '#ccc', 
-          fontSize: '16px', 
-          padding: '5px 0' 
-        }}>
-          Marvel
-        </Link>
-        <Link to="/category/Movies" style={{ 
-          textDecoration: 'none', 
-          color: '#ccc', 
-          fontSize: '16px', 
-          padding: '5px 0' 
-        }}>
-          Películas
-        </Link>
-        <Link to="/category/Anime" style={{ 
-          textDecoration: 'none', 
-          color: '#ccc', 
-          fontSize: '16px', 
-          padding: '5px 0' 
-        }}>
-          Anime
-        </Link>
-      </div>
+      <div style={{ display: 'flex', gap: '25px' }}> <Link to="/">Todos</Link> <Link to={`/category/${encodeURIComponent('Onepunch')}`}>Onepunch</Link> <Link to={`/category/${encodeURIComponent('Dragon ball')}`}>Dragon ball</Link> <Link to={`/category/${encodeURIComponent('Saint Seiya')}`}>Saint Seiya</Link></div>
 
       <CartWidget />
     </nav>
