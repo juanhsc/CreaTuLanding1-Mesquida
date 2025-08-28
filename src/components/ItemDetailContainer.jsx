@@ -57,7 +57,7 @@ const ItemDetailContainer = () => {
         <p style={{ margin: '1rem 0' }}>{funko.description}</p>
         <p><strong>Stock disponible: {funko.stock}</strong></p>
         
-        {/* Contador */}
+        
         <div style={{ margin: '1rem 0' }}>
           <button 
             onClick={handleDecrease}

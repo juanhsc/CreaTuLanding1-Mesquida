@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
-import { getFunkos, getFunkosByCategory } from '../data/funkos';
 
+import { getFunkos, getFunkosByCategory } from '../data/funkos';
+import { useParams, Link } from 'react-router-dom';  
 const ItemListContainer = ({ greeting }) => {
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -70,21 +70,21 @@ const ItemListContainer = ({ greeting }) => {
             <h3>{funko.name}</h3>
             <p>Precio: ${funko.price}</p>
             <p>Stock: {funko.stock}</p>
-            <button 
-              style={{
-                backgroundColor: '#007bff',
-                color: 'white',
-                border: 'none',
-                padding: '0.5rem 1rem',
-                borderRadius: '4px',
-                cursor: 'pointer'
-              }}
-             onClick={() => {
-  window.location.href = `/item/${funko.id}`;
-}}
-            >
-              Ver Detalle
-            </button>
+            <Link 
+  to={`/item/${funko.id}`}
+  style={{
+    backgroundColor: '#007bff',
+    color: 'white',
+    border: 'none',
+    padding: '0.5rem 1rem',
+    borderRadius: '4px',
+    cursor: 'pointer',
+    textDecoration: 'none',  
+    display: 'inline-block' 
+  }}
+>
+  Ver Detalle
+</Link>
           </div>
         ))}
       </div>

@@ -5,7 +5,7 @@ const CartWidget = () => {
     
     <div>
       <span className="text-2xl">🛒</span> 
-      <span style={{color:"red"}}>5</span> 
+      <span style={{color:"red"}}>0</span> 
     </div>
   );
 };
