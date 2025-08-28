@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 
 import { getFunkos, getFunkosByCategory } from '../data/funkos';
 import { useParams, Link } from 'react-router-dom';  
+
+
 const ItemListContainer = ({ greeting }) => {
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);
