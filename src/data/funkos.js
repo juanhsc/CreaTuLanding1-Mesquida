@@ -43,6 +43,42 @@ image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcJaXX0sol10BgSalH
     image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS930n0txN72pNx3YMaS5o2-iMf1C04jVXvQA&s",
     description: "Funko Pop de Broly, figura coleccionable de vinilo.",
     stock: 6
+  },
+  {
+    id: 6,
+    name: "Funko Iron man",
+    price: 18.99,
+    category: "Marvel",
+    image: "https://acdn-us.mitiendanube.com/stores/806/999/products/funko-pop-iron-man-04-original-d_nq_np_804754-mla26965245820_032018-f1-698f1745db6242f56315331740466313-1024-1024.jpg",
+    description: "Funko Pop de Iron man, figura coleccionable de vinilo.",
+    stock: 6
+  },
+  {
+    id: 7,
+    name: "Funko Spider man",
+    price: 18.99,
+    category: "Marvel",
+    image: "https://http2.mlstatic.com/D_NQ_NP_832652-MLA49065131353_022022-O.webp",
+    description: "Funko Pop de Spider man, figura coleccionable de vinilo.",
+    stock: 6
+  },
+  {
+    id: 8,
+    name: "Funko Batman",
+    price: 18.99,
+    category: "DC",
+    image: "https://http2.mlstatic.com/D_NQ_NP_602931-MLM74218919443_012024-O.webp",
+    description: "Funko Pop de Batman, figura coleccionable de vinilo.",
+    stock: 6
+  },
+  {
+    id: 9,
+    name: "Funko Superman",
+    price: 18.99,
+    category: "DC",
+    image: "https://images.bigbadtoystore.com/images/p/full/2024/09/9e1ee7ed-df7c-4d3e-a5cc-59a0e63f3a93.jpg",
+    description: "Funko Pop de Superman, figura coleccionable de vinilo.",
+    stock: 6
   }
 ];
 

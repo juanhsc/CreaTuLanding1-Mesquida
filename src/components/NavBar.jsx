@@ -23,7 +23,7 @@ const NavBar = () => {
         Funko Store
       </Link>
 
-      <div style={{ display: 'flex', gap: '25px' }}> <Link to="/">Todos</Link> <Link to={`/category/${encodeURIComponent('Onepunch')}`}>Onepunch</Link> <Link to={`/category/${encodeURIComponent('Dragon ball')}`}>Dragon ball</Link> <Link to={`/category/${encodeURIComponent('Saint Seiya')}`}>Saint Seiya</Link></div>
+      <div style={{ display: 'flex', gap: '25px' }}> <Link to="/">Todos</Link> <Link to={`/category/${encodeURIComponent('Marvel')}`}>Marvel</Link> <Link to={`/category/${encodeURIComponent('Dragon ball')}`}>Dragon ball</Link> <Link to={`/category/${encodeURIComponent('DC')}`}>DC</Link></div>
 
       <CartWidget />
     </nav>
