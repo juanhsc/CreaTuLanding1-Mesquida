@@ -1,20 +1,35 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 
-const ItemCount = ({ stock = 0, initial = 1, onAdd }) => {
-const [qty, setQty] = useState(initial);
-const inc = () => setQty(q => Math.min(q + 1, stock));
-const dec = () => setQty(q => Math.max(q - 1, 1));
+const ItemCount = ({ stock, initial, onAdd }) => {
+  const [quantity, setQuantity] = useState(initial);
 
-return (
-<div style={{ margin: '1rem 0' }}>
-<button onClick={dec} disabled={qty <= 1}>-</button>
-<span style={{ margin: '0 1rem', fontWeight: 'bold' }}>{qty}</span>
-<button onClick={inc} disabled={qty >= stock}>+</button>
-<button onClick={() => onAdd?.(qty)} disabled={stock === 0} style={{ marginLeft: 12 }}>
-Agregar al carrito
-</button>
-</div>
-);
+  const increment = () => {
+    if (quantity < stock) {
+      setQuantity(quantity + 1);
+    }
+  };
+
+  const decrement = () => {
+    if (quantity > 1) {
+      setQuantity(quantity - 1);
+    }
+  };
+
+  return (
+    <div style={{ textAlign: 'center', margin: '1rem 0' }}>
+      <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', marginBottom: '1rem' }}>
+        <button onClick={decrement} style={{ padding: '5px 10px' }}>-</button>
+        <h4 style={{ margin: '0 15px' }}>{quantity}</h4>
+        <button onClick={increment} style={{ padding: '5px 10px' }}>+</button>
+      </div>
+      <div>
+        {/* El botón se deshabilita si no hay stock */}
+        <button onClick={() => onAdd(quantity)} disabled={!stock} style={{ padding: '10px 15px' }}>
+          Agregar al carrito
+        </button>
+      </div>
+    </div>
+  );
 };
 
 export default ItemCount;

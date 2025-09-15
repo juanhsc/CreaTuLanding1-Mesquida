@@ -16,7 +16,7 @@ const Item = ({ product }) => {
       <h3>{product.name}</h3>
       <p>Precio: ${product.price}</p>
       <p>Stock: {product.stock}</p>
-      {/* Este Link nos llevará a la página de detalle del producto */}
+     
       <Link to={`/item/${product.id}`} style={{
         display: 'inline-block',
         marginTop: '10px',
