@@ -20,7 +20,7 @@ const NavBar = () => {
         textDecoration: 'none', 
         color: '#fff' 
       }}>
-        Funko Store
+        Tienda Funko
       </Link>
 
       <div style={{ display: 'flex', gap: '25px' }}> <Link to="/">Todos</Link> <Link to={`/category/${encodeURIComponent('Marvel')}`}>Marvel</Link> <Link to={`/category/${encodeURIComponent('Dragon ball')}`}>Dragon ball</Link> <Link to={`/category/${encodeURIComponent('DC')}`}>DC</Link></div>
@@ -31,4 +31,3 @@ const NavBar = () => {
 };
 
 export default NavBar;
-//comentario
