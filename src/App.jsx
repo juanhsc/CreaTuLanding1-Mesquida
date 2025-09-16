@@ -26,7 +26,7 @@ const App = () => {
             element={<ItemDetailContainer />} 
           />
           
-          {/* 2. LÍNEA NUEVA: AÑADIMOS LA RUTA DEL CARRITO */}
+          
           <Route path='/cart' element={<Cart />} /> 
           
           <Route 

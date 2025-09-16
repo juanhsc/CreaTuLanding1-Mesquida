@@ -1,14 +1,14 @@
-// src/components/Cart.jsx
+
 
 import React from 'react';
-import { useCart } from '../context/CartContext'; // Importamos el hook
+import { useCart } from '../context/CartContext'; 
 import { Link } from 'react-router-dom';
 
 const Cart = () => {
-  // Obtenemos todo lo que necesitamos del contexto
+  
   const { cart, clearCart, removeItem, cartTotal } = useCart();
 
-  // Caso 1: Si el carrito está vacío
+  
   if (cart.length === 0) {
     return (
       <div style={{ textAlign: 'center', padding: '2rem' }}>
@@ -26,12 +26,12 @@ const Cart = () => {
     );
   }
 
-  // Caso 2: Si el carrito tiene productos
+  
   return (
     <div style={{ padding: '2rem' }}>
       <h1 style={{ textAlign: 'center' }}>Resumen de tu Carrito</h1>
       
-      {/* Mapeamos los productos del carrito */}
+     
       {cart.map(product => (
         <div key={product.id} style={{ 
           display: 'flex', 
@@ -54,7 +54,7 @@ const Cart = () => {
         </div>
       ))}
       
-      {/* Total y botones de acción */}
+     
       <div style={{ marginTop: '2rem', textAlign: 'right' }}>
         <h2>Total: ${cartTotal()}</h2>
         <button 
@@ -71,7 +71,7 @@ const Cart = () => {
         >
           Vaciar Carrito
         </button>
-        {/* Aquí podrías agregar un botón para "Finalizar Compra" */}
+        
       </div>
     </div>
   );

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useParams, Link } from 'react-router-dom'; // 1. IMPORTAMOS 'Link'
+import { useParams, Link } from 'react-router-dom'; 
 import { getFunkoById } from '../data/funkos';
 import ItemCount from './ItemCount';
 import { useCart } from '../context/CartContext';
@@ -8,7 +8,7 @@ const ItemDetailContainer = () => {
   const [product, setProduct] = useState(null);
   const [loading, setLoading] = useState(true);
   
-  // 2. NUEVO ESTADO: Para saber si el usuario ya agregó este item
+
   const [quantityAdded, setQuantityAdded] = useState(0);
 
   const { itemId } = useParams();
@@ -27,10 +27,10 @@ const ItemDetailContainer = () => {
       });
   }, [itemId]);
 
-  // 3. MODIFICAMOS 'handleOnAdd'
+  
   const handleOnAdd = (quantity) => {
     addItem(product, quantity);
-    // Actualizamos el estado local para saber que ya se agregó
+    
     setQuantityAdded(quantity); 
   };
 
@@ -64,13 +64,13 @@ const ItemDetailContainer = () => {
         <p>{product.description}</p>
         <h3>Precio: ${product.price}</h3>
         
-        {/* --- 4. LÓGICA DE RENDERIZADO CONDICIONAL --- */}
+       
         
         { availableStock > 0 ? (
             
-            // Si hay stock, revisamos si ya se agregó
+            
             quantityAdded > 0 ? (
-              // Si YA se agregó, mostramos los links
+              
               <div style={{ textAlign: 'center' }}>
                 <p style={{ fontWeight: 'bold' }}>¡Agregaste {quantityAdded} al carrito!</p>
                 <Link to="/cart" style={{
@@ -87,7 +87,7 @@ const ItemDetailContainer = () => {
                 </Link>
               </div>
             ) : (
-              // Si NO se ha agregado, mostramos el contador
+              
               <ItemCount 
                 initial={1} 
                 stock={availableStock}
@@ -96,7 +96,7 @@ const ItemDetailContainer = () => {
             )
 
         ) : (
-          // Si NO hay stock (availableStock es 0), mostramos un mensaje
+          
           <p style={{ textAlign: 'center', fontWeight: 'bold', color: 'red' }}>
             ¡No hay más stock disponible!
           </p>

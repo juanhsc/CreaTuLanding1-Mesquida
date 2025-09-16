@@ -23,7 +23,7 @@ const ItemCount = ({ stock, initial, onAdd }) => {
         <button onClick={increment} style={{ padding: '5px 10px' }}>+</button>
       </div>
       <div>
-        {/* El botón se deshabilita si no hay stock */}
+        
         <button onClick={() => onAdd(quantity)} disabled={!stock} style={{ padding: '10px 15px' }}>
           Agregar al carrito
         </button>

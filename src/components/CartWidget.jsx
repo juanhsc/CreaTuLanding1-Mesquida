@@ -2,14 +2,14 @@
 
 import React from 'react';
 import { useCart } from '../context/CartContext'; 
-import { Link } from 'react-router-dom'; // <-- 1. LÍNEA NUEVA: IMPORTAMOS LINK
+import { Link } from 'react-router-dom'; 
 
 const CartWidget = () => {
   const { cartQuantity } = useCart();
   const totalItems = cartQuantity();
 
   return (
-    // 2. CAMBIO: Envolvemos todo en un Link que apunta a "/cart"
+    
     <Link to="/cart" style={{ textDecoration: 'none', color: 'inherit' }}>
       <div>
         <span className="text-2xl">🛒</span> 
