@@ -1,15 +1,7 @@
 export const funkos = [
+
   {
-    id: 1,
-    name: "Funko Goku",
-    price: 15.99,
-    category: "Dragon ball",
-image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcJaXX0sol10BgSalHqIE_gm8cGlpnFSNTLw&s",
-    description: "Funko Pop goku, figura coleccionable de vinilo.",
-    stock: 10
-  },
-  {
-    id: 2,
+   
     name: "Funko Vegeta",
     price: 16.99,
     category: "Dragon ball",
@@ -18,7 +10,7 @@ image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcJaXX0sol10BgSalH
     stock: 8
   },
   {
-    id: 3,
+    
     name: "Funko Gohan",
     price: 14.99,
     category: "Dragon ball",
@@ -27,7 +19,7 @@ image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcJaXX0sol10BgSalH
     stock: 8
   },
   {
-    id: 4,
+    
     name: "Funko Freezer",
     price: 17.99,
     category: "Dragon ball",
@@ -36,7 +28,7 @@ image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcJaXX0sol10BgSalH
     stock: 15
   },
   {
-    id: 5,
+    
     name: "Funko Broly",
     price: 18.99,
     category: "Dragon ball",
@@ -45,7 +37,7 @@ image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcJaXX0sol10BgSalH
     stock: 4
   },
   {
-    id: 6,
+    
     name: "Funko Iron man",
     price: 18.99,
     category: "Marvel",
@@ -54,7 +46,7 @@ image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcJaXX0sol10BgSalH
     stock: 3
   },
   {
-    id: 7,
+    
     name: "Funko Spider man",
     price: 18.99,
     category: "Marvel",
@@ -63,7 +55,7 @@ image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcJaXX0sol10BgSalH
     stock: 5
   },
   {
-    id: 8,
+    
     name: "Funko Batman",
     price: 18.99,
     category: "DC",
@@ -72,7 +64,7 @@ image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcJaXX0sol10BgSalH
     stock: 12
   },
   {
-    id: 9,
+    
     name: "Funko Superman",
     price: 18.99,
     category: "DC",

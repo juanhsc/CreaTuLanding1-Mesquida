@@ -71,7 +71,18 @@ const Cart = () => {
         >
           Vaciar Carrito
         </button>
-        
+         <Link to="/checkout" style={{
+          padding: '10px 15px', 
+          backgroundColor: '#28a745', 
+          color: 'white', 
+          border: 'none', 
+          borderRadius: '5px',
+          cursor: 'pointer',
+          textDecoration: 'none'
+        }}>
+          Terminar Compra
+        </Link>
+        {/* ------------------------- */}
       </div>
     </div>
   );
